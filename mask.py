@@ -75,7 +75,8 @@ def mouse_callback(event,x,y,flags,param):
 
 
 
-cv.namedWindow('image')   
+cv.namedWindow('image',cv.WINDOW_NORMAL)   
+cv.resizeWindow('image', 1000,1000)
 cv.setMouseCallback('image', mouse_callback) 
 imglist = os.listdir("images")
 
